@@ -32,9 +32,9 @@ public final class App extends Application {
   public void start(Stage primaryStage) throws Exception {
 
     FXMLLoader loader =
-        new FXMLLoader(this.getClass().getResource("/us/bzsf/temper/weather-reader-window.fxml"));
+        new FXMLLoader(this.getClass().getResource("/us/bzsf/weatherreader/weather-reader-window.fxml"));
     Pane weatherReaderDisplayPane =
-        loader.load(getClass().getResource("/us/bzsf/temper/weather-reader-window.fxml").openStream());
+        loader.load(getClass().getResource("/us/bzsf/weatherreader/weather-reader-window.fxml").openStream());
     bzsfMqttClient = new BzsfWeatherMqttClient();
     WeatherReaderPaneController weatherReaderPaneController =
         loader.<WeatherReaderPaneController>getController();

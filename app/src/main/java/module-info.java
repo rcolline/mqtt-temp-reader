@@ -1,4 +1,4 @@
-module us.bzsf.temper {
+module us.bzsf.weatherreader {
     requires transitive javafx.controls;
     requires javafx.fxml;
     requires transitive javafx.graphics;
