@@ -1,0 +1,16 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+    "java.format.settings.profile": "GoogleStyle",
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx16G -Xms100m", 
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/r/scratch/javafx/javafx-sdk-18.0.1/lib/*.jar",
+    ],
+    "maven.terminal.customEnv": [
+        {
+            "environmentVariable": "JAVA_HOME",                
+            "value": "/usr/lib/jvm/java-11-openjdk-amd64/",
+        }
+    ],
+}

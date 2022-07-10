@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "interactive",
+		"java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+		"java.format.settings.profile": "GoogleStyle",
+		"java.project.referencedLibraries": [
+			"lib/**/*.jar",
+			"/home/r/scratch/javafx/javafx-sdk-18.0.1/lib/*.jar"
+		]
+	}
+}

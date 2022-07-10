@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="us.bzsf.weatherreader.WeatherReaderPaneController">
+   <children>
+      <GridPane prefHeight="160.0" prefWidth="200.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.0" minWidth="10.0" prefWidth="129.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="87.5" minWidth="10.0" prefWidth="52.5" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="55.75" minHeight="10.0" prefHeight="46.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.25" minHeight="10.0" prefHeight="47.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.25" minHeight="10.0" prefHeight="47.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.25" minHeight="10.0" prefHeight="47.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.25" minHeight="10.0" prefHeight="47.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.25" minHeight="10.0" prefHeight="47.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.25" minHeight="10.0" prefHeight="47.5" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label text="Outside Temp" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Label text="Outside Humidity" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Label text="Inside Temp" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <children>
+                  <Label text="Inside Humidity" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+               <children>
+                  <Label text="Wind Direction" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5">
+               <children>
+                  <Label text="Wind Gust Speed" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="38.0" prefWidth="87.0" GridPane.columnIndex="1">
+               <children>
+                  <Label id="label_outside_temp" fx:id="label_outside_temp" text="60°" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="139.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label id="label_outside_humidity" fx:id="label_outside_humidity" text="49%" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="139.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Label id="label_inside_temp" fx:id="label_inside_temp" text="71°" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="139.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Label id="label_inside_humidity" fx:id="label_inside_humidity" text="52%" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="139.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <Label id="label_wind_direction" fx:id="label_wind_direction" text="135°" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="139.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <children>
+                  <Label id="label_wind_gust_speed" fx:id="label_wind_gust_speed" text="8 mph" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="124.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6">
+               <children>
+                  <Label text="Last Updated" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="139.0" layoutY="10.0" prefHeight="38.0" prefWidth="87.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <children>
+                  <Label id="label_outside_temp" fx:id="label_last_updated" text="9:51:00 AM" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
