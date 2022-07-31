@@ -84,6 +84,11 @@ public class WeatherInfo {
     return windSpeedDirectionDegrees;
   }
 
+  public String getWindSpeedStringCardinalDirection() {
+    return CardinalDirection.getCardinalDirectionByDegrees((int) windSpeedDirectionDegrees)
+        .toString();
+  }
+
   public float getWindGustSpeedMph() {
     return windGustSpeedMph;
   }

@@ -47,7 +47,9 @@ public final class App extends Application {
         weatherReaderPaneController.setOutsideHumidity(e.getOutsideHumidity());
         weatherReaderPaneController.setInsideTemp(e.getInsideTempFarenheit());
         weatherReaderPaneController.setInsideHumidity(e.getInsideHumidity());
-        weatherReaderPaneController.setWindDirection(e.getWindSpeedDirectionDegrees());
+        weatherReaderPaneController.setWindDirection(
+          e.getWindSpeedDirectionDegrees(), 
+          e.getWindSpeedStringCardinalDirection());
         weatherReaderPaneController.setWindGustSpeed(e.getWindGustSpeedMph());
         weatherReaderPaneController.setUpdatedTime();
       });

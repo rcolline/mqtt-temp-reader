@@ -41,8 +41,9 @@ public class WeatherReaderPaneController {
     this.label_inside_humidity.setText(String.valueOf(insideHumidity + "%"));
   }
 
-  public void setWindDirection(Float windDirection) {
-    this.label_wind_direction.setText(String.valueOf(windDirection) + "°");
+  public void setWindDirection(Float windDirectionDegrees, String windDirectionCardinal) {
+    this.label_wind_direction.setText(
+      String.valueOf(windDirectionDegrees) + "° " + windDirectionCardinal);
   }
 
   public void setWindGustSpeed(Float windGustSpeed) {
